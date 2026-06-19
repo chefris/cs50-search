@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="advanced.css">
+    <title>Advanced Search</title>
+</head>
+<body>
+    <img src="googlelogo.png" alt="Google Logo" id="logo">
+    <hr style="position: absolute; top: 12.5%; left: 0%; width: 100%;">
+    <h1 id="search-label">Advanced Search</h1>
+    <form action="https://google.com/search">
+        <label for="as_q" class="label" style="top: 32.5%; transform: translate(-0%, -50%);">All of these words:</label>
+        <input type="text" name="as_q" class="searchbar" style="top: 32.5%; transform: translate(-0%, -50%);">
+        <label for="as_epq" class="label" style="top: 47.5%; transform: translate(-0%, -50%);">This exact word or phrase:</label>
+        <input type="text" name="as_epq" class="searchbar" style="top: 47.5%; transform: translate(-0%, -50%);">
+        <label for="as_eq" class="label" style="top: 62.5%; transform: translate(-0%, -50%);">None of these words:</label>
+        <input type="text" name="as_eq" class="searchbar" style="top: 62.5%; transform: translate(-0%, -50%);">
+        <label for="as_oq" class="label" style="top: 77.5%; transform: translate(-0%, -50%);">Any of these words:</label>
+        <input type="text" name="as_oq" class="searchbar" style="top: 77.5%; transform: translate(-0%, -50%);">
+        <input type="submit" value="Advanced Search" id="button">
+    </form>
+    <a href="index.html" id="google-search">Google Search</a>
+</body>
+</html>
