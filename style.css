@@ -37,6 +37,7 @@ body {
     animation-name: searchbar-focus;
     animation-duration: 250ms;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
     border-color: rgb(120,120,120);
     background-color: rgb(35,35,40);
 }
@@ -67,6 +68,7 @@ body {
     animation-name: button-hover;
     animation-duration: 250ms;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
     border-color: rgb(120,120,120);
     background-color: rgb(35,35,40);
 }
@@ -135,6 +137,7 @@ body {
     animation-name: button-hover;
     animation-duration: 250ms;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
     border-color: rgb(120,120,120);
     background-color: rgb(35,35,40);
 }
