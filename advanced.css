@@ -3,125 +3,101 @@ body {
     overflow: hidden;
 }
 
-#searchbar {
-    position: absolute;
-    top: 48.75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(30,30,35);
-    border: 2px solid rgb(100,100,100);
-    border-radius: 7.5vh;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(220,220,220);
-    font-size: 20px;
-    width: 60vw;
-    height: 7.5vh;
-    padding-left: 3vw;
-    padding-right: 1vw;
-}
-
-@keyframes searchbar-focus {
-    0% {
-        border-color: rgb(100,100,100);
-        background-color: rgb(30,30,35);
-    }
-
-    100% {
-        border-color: rgb(120,120,120);
-        background-color: rgb(35,35,40);
-    }
-}
-
-#searchbar:focus {
-    outline: none;
-    animation-name: searchbar-focus;
-    animation-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-fill-mode: forwards;
-    border-color: rgb(120,120,120);
-    background-color: rgb(35,35,40);
-}
-
-#searchbutton, #lucky {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(220,220,220);
-    background-color: rgb(30,30,35);
-    border: none;
-    border-radius: 7.5px;
-    text-align: center;
-    border: 1px solid rgb(100,100,100);
-}
-
-@keyframes button-hover {
-    0% {
-        border-color: rgb(100,100,100);
-        background-color: rgb(30,30,35);
-    }
-    100% {
-        border-color: rgb(120,120,120);
-        background-color: rgb(35,35,40);
-    }
-}
-
-#searchbutton:hover, #lucky:hover {
-    cursor: pointer;
-    animation-name: button-hover;
-    animation-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-fill-mode: forwards;
-    border-color: rgb(120,120,120);
-    background-color: rgb(35,35,40);
-}
-
-#searchbutton {
-    position: absolute;
-    left: 42.5%;
-    top: 62.25%;
-    font-size: 17px;
-    transform: translate(-50%, -50%);
-    width: 12vw;
-    height: 7vh;
-}
-
-#lucky {
-    position: absolute;
-    left: 57.5%;
-    top: 62.25%;
-    font-size: 17px;
-    transform: translate(-50%, -50%);
-    width: 13vw;
-    height: 7vh;
-}
-
 #logo {
     position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: -10;
-    width: 30vw;
-    height: 25vh;
+    top: 7.5%;
+    left: 2%;
+    transform: translate(-0%,-50%);
+    width: 10vw;
 }
 
-#searchicon {
+#search-label {
     position: absolute;
-    top: 48.75%;
-    left: 18.5%;
-    height: 3.5vh;
-    transform: translate(+20%, -50%);
+    top: 15%;
+    left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(225,225,225);
 }
 
-#images {
+.label {
     position: absolute;
+    left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(225,225,225);
+}
+
+.searchbar {
+    position: absolute;
+    left: 27.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(225,225,225);
+    background-color: rgb(30,30,35);
+    border: 2px solid rgb(100,100,100);
+    border-radius: 5px;
+    width: 20%;
+    height: 7.5%;
+    font-size: 20px;
+}
+
+@keyframes animation {
+    0% {
+        border-color: rgb(100,100,100);
+        background-color: rgb(30,30,35);
+    }
+
+    100% {
+        border-color: rgb(120,120,120);
+        background-color: rgb(35,35,40);
+    }
+}
+
+.searchbar:focus {
+    outline: none;
+    animation-name: animation;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    border-color: rgb(120,120,120);
+    background-color: rgb(35,35,40);
+}
+
+#button {
+    position: absolute;
+    top: 90.5%;
+    left: 2%;
+    transform: translate(-0%, -50%);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: rgb(75,75,225);
-    top: 30.5%;
-    left: 58%;
+    color: rgb(20,20,22);
+    background-color: rgb(125,125,225);
+    border: 2px solid rgb(20,20,22);
+    border-radius: 100px;
+    width: 13.5vw;
+    height: 7vh;
 }
 
-#image-search, #advanced-search {
+@keyframes button-animation {
+    0% {
+        border-color: rgb(20,20,22);
+        background-color: rgb(125,125,225);
+    }
+
+    100% {
+        border-color: rgb(40,40,42);
+        background-color: rgb(135,135,255);
+    }
+}
+
+#google-search {
+    position: absolute;
+    top: 3%;
+    left: 95%;
+    width: 8vw;
+    height: 3.25vh;
+    transform: translate(-50%,-50%);
     background-color: rgb(30,30,35);
     border: 1px solid rgb(100,100,100);
     color: rgb(225,225,225);
@@ -132,30 +108,22 @@ body {
     text-decoration: none;
 }
 
-#image-search:hover, #advanced-search:hover {
+#button:hover {
     cursor: pointer;
-    animation-name: button-hover;
+    animation-name: button-animation;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    border-color: rgb(40,40,42);
+    background-color: rgb(135,135,255);
+}
+
+#google-search:hover {
+    cursor: pointer;
+    animation-name: animation;
     animation-duration: 250ms;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
     border-color: rgb(120,120,120);
     background-color: rgb(35,35,40);
-}
-
-#image-search {
-    position: absolute;
-    top: 3%;
-    left: 95%;
-    width: 8vw;
-    height: 3.25vh;
-    transform: translate(-50%,-50%);
-}
-
-#advanced-search {
-    position: absolute;
-    top: 3%;
-    left: 85%;
-    width: 10vw;
-    height: 3.25vh;
-    transform: translate(-50%, -50%);
 }
